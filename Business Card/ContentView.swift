@@ -28,7 +28,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 25))
                 Divider()
-                InfoView(text: "mariolahullings@gmail.com", imageName: "mail")
+                InfoView(text: "https://github.com/MariolaH", imageName: "globe")
                 InfoView(text: "https://mariola-portfolio.vercel.app/", imageName: "briefcase")
             }
         }
