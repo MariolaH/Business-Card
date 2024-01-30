@@ -13,11 +13,23 @@ struct ContentView: View {
             Color(red: 0.61, green: 0.35, blue: 0.71)
                 .edgesIgnoringSafeArea(.all)
             VStack {
+                Image("Mariola")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 280.0, height: 200.0)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle().stroke(Color.white, lineWidth: 5))
                 Text("Mariola Hullings")
                     .font(Font.custom("Pacifico-Regular", size: 40))
                     .bold()
                     .foregroundColor(.white)
-                
+                Text("iOS Developer")
+                    .foregroundColor(.white)
+                    .font(.system(size: 25))
+                Divider()
+                InfoView(text: "mariolahullings@gmail.com", imageName: "mail")
+                InfoView(text: "https://mariola-portfolio.vercel.app/", imageName: "briefcase")
             }
         }
     }
